@@ -6,6 +6,7 @@
     <title>Produk</title>
     <link href="./src/output.css" rel="stylesheet" />
   </head>
+
   <body>
     <!-- NAVBAR -->
     <nav
@@ -27,7 +28,9 @@
 
         <!-- MENU -->
         <div class="hidden md:flex items-center gap-8 font-medium">
-          <a href="#home" class="hover:text-[#748DAE] transition"> Home </a>
+          <a href="#home" class="hover:text-[#748DAE] transition">
+            Home
+          </a>
 
           <a href="#contact" class="hover:text-[#748DAE] transition">
             Contact
@@ -36,6 +39,7 @@
 
         <!-- RIGHT -->
         <div class="flex items-center gap-4">
+
           <!-- SEARCH -->
           <form class="hidden md:block">
             <div class="relative">
@@ -47,7 +51,7 @@
               />
 
               <svg
-                class="absolute left-3 top-2.5 w-4 h-4 text-[ #748DAE]"
+                class="absolute left-3 top-2.5 w-4 h-4 text-[#748DAE]"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -63,29 +67,39 @@
             </div>
           </form>
 
-          <!--cart-->
-         <a href="cart.html" class="relative">
-  <i data-feather="shopping-cart" class="w-7 h-7 text-[#748DAE]"></i>
+          <!-- CART -->
+          <a href="./view/cart.html" class="relative">
+            <i
+              data-feather="shopping-cart"
+              class="w-7 h-7 text-[#748DAE]"
+            ></i>
 
-  <span
-    id="cartCount"
-    class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
-  >
-    0
-  </span>
-</a>
+            <span
+              id="cartCount"
+              class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
+            >
+              0
+            </span>
+          </a>
+
           <!-- PROFILE -->
-          <a href="profile.html" class="hover:scale-110 transition">
-            <i data-feather="user" class="w-6 h-6 text-[#748DAE]"> </i>
+          <a
+            href="./view/profile.html"
+            class="hover:scale-110 transition"
+          >
+            <i
+              data-feather="user"
+              class="w-6 h-6 text-[#748DAE]"
+            ></i>
           </a>
         </div>
       </div>
     </nav>
 
-    <!-- Ini Hero -->
+    <!-- HERO -->
     <section
       id="home"
-      class="bg-center bg-no-repeatbg bg-cover blend-multiply w-screen"
+      class="bg-center bg-no-repeat bg-cover blend-multiply w-screen"
       style="background-image: url(&quot;asset/banner.png&quot;)"
     >
       <div class="px-4 mx-auto max-w-screen text-center py-24 lg:py-56">
@@ -94,15 +108,17 @@
         >
           Discover Your Perfect Style
         </h1>
+
         <p
           class="mb-8 text-base font-normal text-white md:text-xl sm:px-16 lg:px-48"
         >
-          Explore premium fashion, electronics, jewelry, and lifestyle products
-          designed to elevate your everyday shopping experience.
+          Explore premium fashion, electronics, jewelry, and lifestyle
+          products designed to elevate your everyday shopping experience.
         </p>
       </div>
     </section>
 
+    <!-- SHOP -->
     <section
       id="shop"
       class="bg-center bg-no-repeat bg-cover blend-multiply-screen"
@@ -114,19 +130,25 @@
 
     <script src="./path/to/flowbite/dist/flowbite.min.js"></script>
 
+    <!-- FOOTER -->
     <footer class="bg-gray-100 border-t border-gray-200 mt-20">
       <div class="max-w-7xl mx-auto px-6 py-14">
+
         <!-- TOP -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
           <!-- LOGO -->
           <div>
             <a href="#" class="flex items-center gap-3">
               <img
                 src="asset/luxea.jpg"
                 class="w-10 h-10 rounded-full object-cover"
+                alt=""
               />
 
-              <h1 class="text-3xl font-bold text-gray-900">Luxea</h1>
+              <h1 class="text-3xl font-bold text-gray-900">
+                Luxea
+              </h1>
             </a>
 
             <p class="text-gray-500 mt-5 leading-relaxed">
@@ -138,7 +160,9 @@
 
           <!-- SHOP -->
           <div>
-            <h2 class="text-lg font-bold text-gray-900 mb-5">Shop</h2>
+            <h2 class="text-lg font-bold text-gray-900 mb-5">
+              Shop
+            </h2>
 
             <ul class="space-y-4 text-gray-500">
               <li>
@@ -160,18 +184,24 @@
               </li>
 
               <li>
-                <a href="#" class="hover:text-black transition"> Jewelry </a>
+                <a href="#" class="hover:text-black transition">
+                  Jewelry
+                </a>
               </li>
             </ul>
           </div>
 
           <!-- COMPANY -->
           <div>
-            <h2 class="text-lg font-bold text-gray-900 mb-5">Company</h2>
+            <h2 class="text-lg font-bold text-gray-900 mb-5">
+              Company
+            </h2>
 
             <ul class="space-y-4 text-gray-500">
               <li>
-                <a href="#shop" class="hover:text-black transition"> Shop </a>
+                <a href="#shop" class="hover:text-black transition">
+                  Shop
+                </a>
               </li>
 
               <li>
@@ -190,7 +220,9 @@
 
           <!-- SUPPORT -->
           <div>
-            <h2 class="text-lg font-bold text-gray-900 mb-5">Support</h2>
+            <h2 class="text-lg font-bold text-gray-900 mb-5">
+              Support
+            </h2>
 
             <ul class="space-y-4 text-gray-500">
               <li>
@@ -215,10 +247,14 @@
         </div>
 
         <!-- LINE -->
-        <div id="contact" class="border-t border-gray-300 mt-14 pt-8">
+        <div
+          id="contact"
+          class="border-t border-gray-300 mt-14 pt-8"
+        >
           <div
             class="flex flex-col md:flex-row items-center justify-between gap-5"
           >
+
             <!-- COPYRIGHT -->
             <p class="text-gray-500 text-sm">
               © 2025 Luxea. All Rights Reserved.
@@ -226,6 +262,7 @@
 
             <!-- SOCIAL MEDIA -->
             <div class="flex items-center gap-6">
+
               <a
                 href="https://github.com/dewwii-ux"
                 class="text-gray-500 hover:text-gray-900 transition"
@@ -240,15 +277,20 @@
                 <i data-feather="instagram"></i>
               </a>
 
-              <a href="#" class="text-gray-500 hover:text-gray-900 transition">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 transition"
+              >
                 <i data-feather="linkedin"></i>
               </a>
+
             </div>
           </div>
         </div>
       </div>
     </footer>
 
+    <!-- FEATHER ICON -->
     <script src="https://unpkg.com/feather-icons"></script>
 
     <script>
