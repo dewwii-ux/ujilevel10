@@ -11,6 +11,7 @@
 
 <body class="bg-neutral-primary">
 
+  <!-- PAYMENT -->
   <section class="py-16 px-5">
 
     <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-10">
@@ -18,15 +19,25 @@
       <!-- PRODUCT -->
       <div class="lg:col-span-2">
 
-        <h2 class="text-3xl font-bold text-heading mb-8">
-          Payment
-        </h2>
+        <div class="flex items-center gap-4 mb-8">
+
+          <a
+            href="cart.html"
+            class="text-[#213C51] hover:text-[#748DAE] transition"
+          >
+            ← Back to Cart
+          </a>
+
+          <h2 class="text-3xl font-bold text-heading">
+            Payment
+          </h2>
+
+        </div>
 
         <div
           id="paymentItems"
           class="space-y-5"
-        >
-        </div>
+        ></div>
 
       </div>
 
@@ -50,7 +61,7 @@
 
         </div>
 
-        <!-- ONGKIR -->
+        <!-- SHIPPING -->
         <div class="flex justify-between mb-4">
 
           <span>
@@ -64,7 +75,9 @@
         </div>
 
         <!-- TOTAL -->
-        <div class="flex justify-between text-xl font-bold border-t pt-4">
+        <div
+          class="flex justify-between text-xl font-bold border-t pt-4"
+        >
 
           <span>
             Total
@@ -76,7 +89,7 @@
 
         </div>
 
-        <!-- PAYMENT -->
+        <!-- PAYMENT METHOD -->
         <div class="mt-8">
 
           <label class="font-semibold text-gray-700">
@@ -88,19 +101,19 @@
             class="w-full mt-3 border rounded-xl px-4 py-3 outline-none focus:border-neutral-primary"
           >
 
-            <option>
+            <option value="BCA">
               Bank BCA
             </option>
 
-            <option>
+            <option value="Mandiri">
               Bank Mandiri
             </option>
 
-            <option>
+            <option value="DANA">
               DANA
             </option>
 
-            <option>
+            <option value="GoPay">
               GoPay
             </option>
 
@@ -122,6 +135,7 @@
 
   </section>
 
+  <!-- PAYMENT SCRIPT -->
   <script src="../script/payment.js"></script>
 
 </body>

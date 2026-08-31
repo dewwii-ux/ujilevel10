@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Detail Product</title>
+
     <link href="../src/output.css" rel="stylesheet" />
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
 
   <body>
+    <!-- NAVBAR -->
     <nav
       class="bg-neutral-primary fixed top-0 w-full z-50 border-b border-neutral-primary shadow-sm"
     >
@@ -18,30 +24,40 @@
         class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
       >
         <!-- LOGO -->
-        <a href="#" class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-3">
           <img
             src="../asset/luxea.jpg"
             class="w-11 h-11 rounded-full object-cover"
-            alt=""
+            alt="Luxea"
           />
 
-          <h1 class="text-2xl font-bold text-heading">Luxea</h1>
+          <h1 class="text-2xl font-bold text-heading">
+            Luxea
+          </h1>
         </a>
 
         <!-- MENU -->
-        <div class="center hidden md:flex items-center gap-8 font-medium text-heading">
-          <a href="/view/home.html" class="hover:text-[#748DAE] transition">
+        <div
+          class="hidden md:flex items-center gap-8 font-medium text-heading"
+        >
+          <a
+            href="../index.html"
+            class="hover:text-[#748DAE] transition"
+          >
             Home
           </a>
-        <div class="center hidden md:flex items-center gap-8 font-medium text-heading">
-          <a href="/view/home.html" class="hover:text-[#748DAE] transition">
+
+          <a
+            href="../index.html#contact"
+            class="hover:text-[#748DAE] transition"
+          >
             Contact
           </a>
-        </div>
         </div>
 
         <!-- RIGHT -->
         <div class="flex items-center gap-4">
+
           <!-- SEARCH -->
           <form class="hidden md:block">
             <div class="relative">
@@ -52,7 +68,7 @@
               />
 
               <svg
-                class="absolute left-3 top-2.5 w-4 h-4 text-[ #748DAE]"
+                class="absolute left-3 top-2.5 w-4 h-4 text-[#748DAE]"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -68,39 +84,63 @@
             </div>
           </form>
 
-          <!--cart-->
-          <a href="cart.html" class="hover:scale-110 transition">
-            <i data-feather="shopping-cart" class="w-6 h-6 text-[#748DAE]"></i>
+          <!-- CART -->
+          <a
+            href="cart.html"
+            class="hover:scale-110 transition"
+          >
+            <i
+              data-feather="shopping-cart"
+              class="w-6 h-6 text-[#748DAE]"
+            ></i>
           </a>
 
           <!-- PROFILE -->
-          <button class="hover:scale-110 transition">
-            <i data-feather="user" class="w-6 h-6 text-[#748DAE]"> </i>
-          </button>
+          <a
+            href="profile.html"
+            class="hover:scale-110 transition"
+          >
+            <i
+              data-feather="user"
+              class="w-6 h-6 text-[#748DAE]"
+            ></i>
+          </a>
         </div>
       </div>
     </nav>
 
     <!-- CONTAINER -->
-    <section class="max-w-7xl mx-auto px-6 py-12">
+    <section class="max-w-7xl mx-auto px-6 py-12 pt-32">
+
       <!-- DETAIL -->
-      <div id="detail" class="bg-white rounded-3xl p-10 shadow-md"></div>
+      <div
+        id="detail"
+        class="bg-white rounded-3xl p-10 shadow-md"
+      ></div>
 
       <!-- POPULAR PRODUCT -->
       <div class="mt-20">
-        <h2 class="text-4xl font-bold mb-10">Popular Products</h2>
+        <h2 class="text-4xl font-bold mb-10">
+          Popular Products
+        </h2>
 
         <div
           id="popular"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
         ></div>
       </div>
+
     </section>
 
-    <div id="detail"></div>
-    <div id="popular"></div>
+    <!-- SCRIPT DETAIL PRODUCT -->
     <script src="../script/produkDetail.js"></script>
 
+    <!-- FLOWBITE -->
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- FEATHER ICON -->
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

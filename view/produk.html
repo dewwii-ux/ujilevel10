@@ -3,9 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Produk</title>
+
     <link href="../src/output.css" rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
+
   <body>
     <!-- NAVBAR -->
     <nav
@@ -15,29 +24,45 @@
         class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
       >
         <!-- LOGO -->
-        <a href="#" class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-3">
           <img
             src="../asset/luxea.jpg"
             class="w-11 h-11 rounded-full object-cover"
-            alt=""
+            alt="Luxea"
           />
 
-          <h1 class="text-2xl font-bold text-heading">Luxea</h1>
+          <h1 class="text-2xl font-bold text-heading">
+            Luxea
+          </h1>
         </a>
 
         <!-- MENU -->
         <div class="hidden md:flex items-center gap-8 font-medium">
-          <a href="#home" class="hover:text-[#748DAE] transition"> Home </a>
+          <a
+            href="#home"
+            class="hover:text-[#748DAE] transition"
+          >
+            Home
+          </a>
 
-          <a href="#about" class="hover:text-[#748DAE] transition"> About </a>
+          <a
+            href="#about"
+            class="hover:text-[#748DAE] transition"
+          >
+            About
+          </a>
 
-          <a href="#contact" class="hover:text-[#748DAE] transition">
+          <a
+            href="#contact"
+            class="hover:text-[#748DAE] transition"
+          >
             Contact
           </a>
         </div>
 
         <!-- RIGHT -->
         <div class="flex items-center gap-4">
+
           <!-- SEARCH -->
           <form class="hidden md:block">
             <div class="relative">
@@ -48,7 +73,7 @@
               />
 
               <svg
-                class="absolute left-3 top-2.5 w-4 h-4 text-[ #748DAE]"
+                class="absolute left-3 top-2.5 w-4 h-4 text-[#748DAE]"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -64,10 +89,15 @@
             </div>
           </form>
 
-          <!--Cart-->
-
-          <a href="" class="hover:scale-110 transition">
-            <i data-feather="shopping-cart" class="w-6 h-6 text-[#748DAE]"> </i>
+          <!-- CART -->
+          <a
+            href="cart.html"
+            class="hover:scale-110 transition"
+          >
+            <i
+              data-feather="shopping-cart"
+              class="w-6 h-6 text-[#748DAE]"
+            ></i>
           </a>
 
           <!-- LOGIN -->
@@ -89,18 +119,21 @@
       </div>
     </nav>
 
-    <!-- Ini Hero -->
+    <!-- HERO -->
     <section
       id="home"
-      class="bg-center bg-no-repeatbg bg-cover blend-multiply w-screen"
-      style="background-image: url(&quot;/asset/banner.png&quot;)"
+      class="bg-center bg-no-repeat bg-cover blend-multiply w-screen"
+      style="background-image: url('../asset/banner.png')"
     >
-      <div class="px-4 mx-auto max-w-screen text-center py-24 lg:py-56">
+      <div
+        class="px-4 mx-auto max-w-screen text-center py-24 lg:py-56"
+      >
         <h1
           class="mb-6 text-4xl font-bold tracking-tighter text-white md:text-5xl lg:text-6xl"
         >
           Discover Your Perfect Style
         </h1>
+
         <p
           class="mb-8 text-base font-normal text-white md:text-xl sm:px-16 lg:px-48"
         >
@@ -111,56 +144,80 @@
     </section>
 
     <!-- ABOUT US -->
-    <section id="about" class="bg-gray-100 py-20">
+    <section
+      id="about"
+      class="bg-gray-100 py-20"
+    >
       <div class="max-w-6xl mx-auto px-6">
+
         <!-- TITLE -->
         <div class="text-center mb-16">
-          <h1 class="text-5xl font-bold text-gray-900">About Us</h1>
+          <h1 class="text-5xl font-bold text-gray-900">
+            About Us
+          </h1>
 
-          <p class="text-gray-500 mt-4 text-lg max-w-2xl mx-auto">
+          <p
+            class="text-gray-500 mt-4 text-lg max-w-2xl mx-auto"
+          >
             Discover a modern shopping experience with high-quality fashion,
             electronics, jewelry, and lifestyle products.
           </p>
         </div>
 
         <!-- CONTENT -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center"
+        >
+
           <!-- IMAGE -->
           <div>
             <img
-              src="/asset/produk.png"
+              src="../asset/produk.png"
               class="flex justify-center w-[420px] h-[420px] rounded-3xl shadow-xl object-cover"
+              alt="Luxea Products"
             />
           </div>
 
           <!-- TEXT -->
           <div>
-            <p class="text-gray-600 mt-6 leading-relaxed text-lg">
-              Luxea is an online shopping platform designed to provide customers
-              with a seamless, fast, and enjoyable shopping experience. We offer
-              a curated collection of fashion, electronics, accessories,
-              jewelry, and lifestyle products from trusted brands and suppliers.
+            <p
+              class="text-gray-600 mt-6 leading-relaxed text-lg"
+            >
+              Luxea is an online shopping platform designed to provide
+              customers with a seamless, fast, and enjoyable shopping
+              experience. We offer a curated collection of fashion,
+              electronics, accessories, jewelry, and lifestyle products from
+              trusted brands and suppliers.
             </p>
 
-            <p class="text-gray-600 mt-5 leading-relaxed text-lg">
+            <p
+              class="text-gray-600 mt-5 leading-relaxed text-lg"
+            >
               Our mission is to combine modern design, product quality, and
-              affordable pricing into one platform that customers can trust. We
-              believe online shopping should be simple, secure, and accessible
-              for everyone.
+              affordable pricing into one platform that customers can trust.
+              We believe online shopping should be simple, secure, and
+              accessible for everyone.
             </p>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- BEST SELLER -->
     <div id="bestSeller"></div>
+
     <script src="../script/produk.js"></script>
 
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-
-    <section class="bg-gray-100 py-20 mt-30">
+    <!-- COLLECTION -->
+    <section
+      class="bg-gray-100 py-20 mt-30"
+    >
       <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-4xl italic font-light text-gray-800 mb-12">
+
+        <h2
+          class="text-4xl italic font-light text-gray-800 mb-12"
+        >
           Our Collection
         </h2>
 
@@ -168,25 +225,41 @@
           id="furnitureBanner"
           class="grid grid-cols-3 gap-0 overflow-hidden rounded-lg shadow-lg"
         ></div>
+
       </div>
     </section>
 
-    <footer class="bg-gray-100 border-t border-gray-200 mt-20">
+    <!-- FOOTER -->
+    <footer
+      class="bg-gray-100 border-t border-gray-200 mt-20"
+    >
       <div class="max-w-7xl mx-auto px-6 py-14">
+
         <!-- TOP -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
           <!-- LOGO -->
           <div>
-            <a href="#" class="flex items-center gap-3">
+            <a
+              href="../index.html"
+              class="flex items-center gap-3"
+            >
               <img
-                src="/asset/luxea.jpg"
+                src="../asset/luxea.jpg"
                 class="w-10 h-10 rounded-full object-cover"
+                alt="Luxea"
               />
 
-              <h1 class="text-3xl font-bold text-gray-900">Luxea</h1>
+              <h1
+                class="text-3xl font-bold text-gray-900"
+              >
+                Luxea
+              </h1>
             </a>
 
-            <p class="text-gray-500 mt-5 leading-relaxed">
+            <p
+              class="text-gray-500 mt-5 leading-relaxed"
+            >
               Modern e-commerce platform providing fashion, electronics,
               jewelry, and lifestyle products with a premium shopping
               experience.
@@ -195,87 +268,144 @@
 
           <!-- SHOP -->
           <div>
-            <h2 class="text-lg font-bold text-gray-900 mb-5">Shop</h2>
+            <h2
+              class="text-lg font-bold text-gray-900 mb-5"
+            >
+              Shop
+            </h2>
 
             <ul class="space-y-4 text-gray-500">
+
               <li>
-                <a href="#" class="hover:text-black transition">
+                <a
+                  href="#"
+                  class="hover:text-black transition"
+                >
                   Men's Fashion
                 </a>
               </li>
 
               <li>
-                <a href="#" class="hover:text-black transition">
+                <a
+                  href="#"
+                  class="hover:text-black transition"
+                >
                   Women's Fashion
                 </a>
               </li>
 
               <li>
-                <a href="#" class="hover:text-black transition">
+                <a
+                  href="#"
+                  class="hover:text-black transition"
+                >
                   Electronics
                 </a>
               </li>
 
               <li>
-                <a href="#" class="hover:text-black transition"> Jewelry </a>
+                <a
+                  href="#"
+                  class="hover:text-black transition"
+                >
+                  Jewelry
+                </a>
               </li>
+
             </ul>
           </div>
 
           <!-- COMPANY -->
           <div>
-            <h2 class="text-lg font-bold text-gray-900 mb-5">Company</h2>
+            <h2
+              class="text-lg font-bold text-gray-900 mb-5"
+            >
+              Company
+            </h2>
 
             <ul class="space-y-4 text-gray-500">
+
               <li>
-                <a href="#home" class="hover:text-black transition"> Home </a>
+                <a
+                  href="#home"
+                  class="hover:text-black transition"
+                >
+                  Home
+                </a>
               </li>
 
               <li>
-                <a href="#about" class="hover:text-black transition">
+                <a
+                  href="#about"
+                  class="hover:text-black transition"
+                >
                   About Us
                 </a>
               </li>
 
               <li>
-                <a href="#contact" class="hover:text-black transition">
+                <a
+                  href="#contact"
+                  class="hover:text-black transition"
+                >
                   Contact
                 </a>
               </li>
+
             </ul>
           </div>
 
           <!-- SUPPORT -->
           <div>
-            <h2 class="text-lg font-bold text-gray-900 mb-5">Support</h2>
+            <h2
+              class="text-lg font-bold text-gray-900 mb-5"
+            >
+              Support
+            </h2>
 
             <ul class="space-y-4 text-gray-500">
+
               <li>
-                <a href="#" class="hover:text-black transition">
+                <a
+                  href="#"
+                  class="hover:text-black transition"
+                >
                   Privacy Policy
                 </a>
               </li>
 
               <li>
-                <a href="#" class="hover:text-black transition">
+                <a
+                  href="#"
+                  class="hover:text-black transition"
+                >
                   Terms & Conditions
                 </a>
               </li>
 
               <li>
-                <a href="#" class="hover:text-black transition">
+                <a
+                  href="#"
+                  class="hover:text-black transition"
+                >
                   Help Center
                 </a>
               </li>
+
             </ul>
           </div>
+
         </div>
 
         <!-- LINE -->
-        <div id="contact" class="border-t border-gray-300 mt-14 pt-8">
+        <div
+          id="contact"
+          class="border-t border-gray-300 mt-14 pt-8"
+        >
           <div
             class="flex flex-col md:flex-row items-center justify-between gap-5"
           >
+
             <!-- COPYRIGHT -->
             <p class="text-gray-500 text-sm">
               © 2025 Luxea. All Rights Reserved.
@@ -283,6 +413,7 @@
 
             <!-- SOCIAL MEDIA -->
             <div class="flex items-center gap-6">
+
               <a
                 href="https://github.com/dewwii-ux"
                 class="text-gray-500 hover:text-gray-900 transition"
@@ -297,19 +428,24 @@
                 <i data-feather="instagram"></i>
               </a>
 
-              <a href="#" class="text-gray-500 hover:text-gray-900 transition">
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 transition"
+              >
                 <i data-feather="linkedin"></i>
               </a>
+
             </div>
           </div>
         </div>
+
       </div>
     </footer>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-
+    <!-- FEATHER ICON -->
     <script>
       feather.replace();
     </script>
+
   </body>
 </html>

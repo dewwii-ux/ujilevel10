@@ -1,67 +1,76 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Account Settings</title>
+  <title>Account Settings</title>
 
-<link href="../src/output.css" rel="stylesheet" />
+  <link href="../src/output.css" rel="stylesheet" />
 
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 
-<style>
-  * {
-    font-family: 'Inter', sans-serif;
-  }
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
 
-  input:focus {
-    outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
-  }
-</style>
+    input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+  </style>
 </head>
 
 <body class="bg-white min-h-screen">
 
   <!-- NAVBAR -->
-  <nav class="bg-white fixed top-0 w-full z-50 border-b border-gray-200 shadow-sm">
-
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+  <nav
+    class="bg-white fixed top-0 w-full z-50 border-b border-gray-200 shadow-sm"
+  >
+    <div
+      class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+    >
 
       <!-- LOGO -->
-      <a href="home.html" class="flex items-center gap-3">
-
+      <a
+        href="../index.html"
+        class="flex items-center gap-3"
+      >
         <img
           src="../asset/luxea.jpg"
           class="w-11 h-11 rounded-full object-cover"
-          alt=""
+          alt="Luxea"
         />
 
         <h1 class="text-2xl font-bold text-gray-900">
           Luxea
         </h1>
-
       </a>
 
       <!-- MENU -->
       <div class="hidden md:flex items-center gap-8 font-medium">
 
-        <a href="home.html"
-          class="hover:text-[#748DAE] transition">
+        <a
+          href="../index.html"
+          class="hover:text-[#748DAE] transition"
+        >
           Home
         </a>
 
-        <a href="home.html#about"
-          class="hover:text-[#748DAE] transition">
+        <a
+          href="../index.html#about"
+          class="hover:text-[#748DAE] transition"
+        >
           About
         </a>
 
-        <a href="home.html#contact"
-          class="hover:text-[#748DAE] transition">
+        <a
+          href="../index.html#contact"
+          class="hover:text-[#748DAE] transition"
+        >
           Contact
         </a>
 
@@ -72,7 +81,6 @@
 
         <!-- SEARCH -->
         <form class="hidden md:block">
-
           <div class="relative">
 
             <input
@@ -88,199 +96,219 @@
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M21 21l-4.35-4.35m1.85-5.65a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
               />
-
             </svg>
 
           </div>
-
         </form>
 
-        <!--cart-->
-        <a href="cart.html" class="hover:scale-110 transition">
-
+        <!-- CART -->
+        <a
+          href="cart.html"
+          class="hover:scale-110 transition"
+        >
           <i
             data-feather="shopping-cart"
             class="w-6 h-6 text-[#748DAE]"
           ></i>
-
         </a>
-        <!-- PROFILE -->
-        <a href="profile.html" class="hover:scale-110 transition">
 
+        <!-- PROFILE -->
+        <a
+          href="profile.html"
+          class="hover:scale-110 transition"
+        >
           <i
             data-feather="user"
             class="w-6 h-6 text-[#748DAE]"
           ></i>
-
         </a>
 
       </div>
 
     </div>
-
   </nav>
 
   <!-- CONTENT -->
   <div class="max-w-2xl mx-auto pt-25 px-6 pb-7">
 
-    <!-- Avatar -->
-    <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-10">
-    <div class="mb-5">
-    
+    <!-- PROFILE CARD -->
+    <div
+      class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-10"
+    >
 
-      <div class="flex items-center gap-3">
+      <!-- AVATAR -->
+      <div class="mb-5">
 
-        <div class="relative">
+        <div class="flex items-center gap-3">
 
-          <img
-            id="avatar-img"
-            src="../asset/profile.png"
-            alt="avatar"
-            class="w-16 h-16 rounded-full object-cover"
+          <div class="relative">
+
+            <img
+              id="avatar-img"
+              src="../asset/profile.png"
+              alt="avatar"
+              class="w-16 h-16 rounded-full object-cover"
+            />
+
+          </div>
+
+          <!-- UPLOAD -->
+          <label
+            class="cursor-pointer border border-blue-500 text-blue-500 hover:bg-blue-50 text-sm font-medium px-5 py-2 rounded-md transition"
+          >
+            Upload
+
+            <input
+              type="file"
+              accept="image/*"
+              class="hidden"
+              onchange="uploadAvatar(this)"
+            />
+          </label>
+
+          <!-- REMOVE -->
+          <button
+            onclick="removeAvatar()"
+            class="border border-gray-300 text-gray-600 hover:bg-gray-50 text-sm font-medium px-5 py-2 rounded-md transition"
+          >
+            Remove
+          </button>
+
+        </div>
+
+      </div>
+
+      <hr class="border-gray-100 mb-6" />
+
+      <!-- DISPLAY NAME & FULL NAME -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+
+        <!-- DISPLAY NAME -->
+        <div>
+
+          <label
+            class="text-sm font-semibold text-gray-800 block mb-1.5"
+          >
+            Display name
+          </label>
+
+          <input
+            type="text"
+            id="display-name"
+            class="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-gray-800"
           />
 
         </div>
 
-        <label class="cursor-pointer border border-blue-500 text-blue-500 hover:bg-blue-50 text-sm font-medium px-5 py-2 rounded-md transition">
+        <!-- FULL NAME -->
+        <div>
 
-          Upload
+          <label
+            class="text-sm font-semibold text-gray-800 block mb-1.5"
+          >
+            Full name
+          </label>
 
           <input
-            type="file"
-            accept="image/*"
-            class="hidden"
-            onchange="uploadAvatar(this)"
+            type="text"
+            id="full-name"
+            class="w-full border border-blue-400 rounded-md px-3 py-2.5 text-sm text-gray-800"
           />
 
-        </label>
+        </div>
+
+      </div>
+
+      <!-- EMAIL & PHONE -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+
+        <!-- EMAIL -->
+        <div>
+
+          <label
+            class="text-sm font-semibold text-gray-800 block mb-1.5"
+          >
+            Email address
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            class="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-gray-400"
+          />
+
+        </div>
+
+        <!-- PHONE -->
+        <div>
+
+          <label
+            class="text-sm font-semibold text-gray-800 block mb-1.5"
+          >
+            Phone number
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            class="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-gray-800"
+          />
+
+        </div>
+
+      </div>
+
+      <hr class="border-gray-100 mb-6" />
+
+      <!-- DELETE ACCOUNT -->
+      <div
+        class="flex items-start justify-between mb-10"
+      >
+
+        <div>
+
+          <p class="text-sm font-semibold text-gray-800">
+            Logout account
+          </p>
+
+          <p class="text-xs text-gray-400 mt-0.5">
+            By deleting your account you will lose all your data
+          </p>
+
+        </div>
 
         <button
-          onclick="removeAvatar()"
-          class="border border-gray-300 text-gray-600 hover:bg-gray-50 text-sm font-medium px-5 py-2 rounded-md transition"
+          onclick="confirmDelete()"
+          class="text-sm text-gray-400 hover:text-red-500 transition whitespace-nowrap mt-0.5"
         >
-          Remove
+          Delete account...
+        </button>
+
+      </div>
+
+      <!-- SAVE BUTTON -->
+      <div class="flex justify-end">
+
+        <button
+          onclick="saveChanges(this)"
+          class="bg-[#748DAE] hover:bg-[#213C51] text-white text-sm font-semibold px-6 py-2.5 rounded-lg transition"
+        >
+          Save changes
         </button>
 
       </div>
 
     </div>
 
-    <hr class="border-gray-100 mb-6" />
-
-    <!-- Display name & Full name -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-
-      <div>
-
-        <label class="text-sm font-semibold text-gray-800 block mb-1.5">
-          Display name
-        </label>
-
-        <input
-          type="text"
-          id="display-name"
-          class="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-gray-800"
-        />
-
-      </div>
-
-      <div>
-
-        <label class="text-sm font-semibold text-gray-800 block mb-1.5">
-          Full name
-        </label>
-
-        <input
-          type="text"
-          id="full-name"
-          class="w-full border border-blue-400 rounded-md px-3 py-2.5 text-sm text-gray-800"
-        />
-
-      </div>
-
-    </div>
-
-    <!-- Email & Phone -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
-
-      <div>
-
-        <label class="text-sm font-semibold text-gray-800 block mb-1.5">
-          Email address
-        </label>
-
-        <input
-          type="email"
-          id="email"
-          class="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-gray-400"
-        />
-
-      </div>
-
-      <div>
-
-        <label class="text-sm font-semibold text-gray-800 block mb-1.5">
-          Phone number
-        </label>
-
-        <input
-          type="tel"
-          id="phone"
-          class="w-full border border-gray-200 rounded-md px-3 py-2.5 text-sm text-gray-800"
-        />
-
-      </div>
-
-    </div>
-
-    <hr class="border-gray-100 mb-6" />
-
-    <!-- Delete Account -->
-    <div class="flex items-start justify-between mb-10">
-
-      <div>
-
-        <p class="text-sm font-semibold text-gray-800">
-          Logout account
-        </p>
-
-        <p class="text-xs text-gray-400 mt-0.5">
-          By deleting your account you will lose all your data
-        </p>
-
-      </div>
-
-      <button
-        onclick="confirmDelete()"
-        class="text-sm text-gray-400 hover:text-red-500 transition whitespace-nowrap mt-0.5"
-      >
-        Delete account...
-      </button>
-
-    </div>
-
-    <!-- Save Button -->
-    <div class="flex justify-end">
-
-      <button
-        onclick="saveChanges(this)"
-        class="bg-[#748DAE] hover:bg-[#213C51] text-white text-sm font-semibold px-6 py-2.5 rounded-lg transition"
-      >
-        Save changes
-      </button>
-
-    </div>
-
   </div>
 
-  <!-- Toast -->
+  <!-- TOAST -->
   <div
     id="toast"
     class="fixed bottom-6 right-6 hidden bg-gray-900 text-white text-sm font-medium px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-2"
@@ -293,21 +321,20 @@
       stroke-width="2.5"
       viewBox="0 0 24 24"
     >
-
       <path d="M5 13l4 4L19 7" />
-
     </svg>
 
     <span id="toast-msg"></span>
 
   </div>
 
+  <!-- FEATHER ICON -->
   <script>
     feather.replace();
   </script>
 
+  <!-- PROFILE JS -->
   <script src="../script/profile.js"></script>
 
 </body>
 </html>
-```

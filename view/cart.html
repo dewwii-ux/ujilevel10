@@ -21,7 +21,7 @@
         class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
       >
         <!-- LOGO -->
-        <a href="#" class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-3">
           <img
             src="../asset/luxea.jpg"
             class="w-11 h-11 rounded-full object-cover"
@@ -30,18 +30,25 @@
 
           <h1 class="text-2xl font-bold text-heading">Luxea</h1>
         </a>
-        
+
         <!-- MENU -->
-        <!-- MENU -->
-        <div class="hidden md:flex items-center gap-8 font-medium text-heading">
-          <a href="/view/home.html" class="hover:text-[#748DAE] transition">
-           Home
+        <div
+          class="hidden md:flex items-center gap-8 font-medium text-heading"
+        >
+          <a
+            href="../index.html"
+            class="hover:text-[#748DAE] transition"
+          >
+            Home
           </a>
 
-          <a href="/view/home.html" class="hover:text-[#748DAE] transition">
-          Contact
-           </a>
-          </div>
+          <a
+            href="../index.html#contact"
+            class="hover:text-[#748DAE] transition"
+          >
+            Contact
+          </a>
+        </div>
 
         <!-- RIGHT -->
         <div class="flex items-center gap-4">
@@ -73,20 +80,29 @@
 
           <!-- CART -->
           <a href="cart.html" class="relative">
-  <i data-feather="shopping-cart" class="w-7 h-7 text-[#748DAE]"></i>
+            <i
+              data-feather="shopping-cart"
+              class="w-7 h-7 text-[#748DAE]"
+            ></i>
 
-  <span
-    id="cartCount"
-    class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
-  >
-    0
-  </span>
-</a>
+            <span
+              id="cartCount"
+              class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
+            >
+              0
+            </span>
+          </a>
 
           <!-- PROFILE -->
-          <button class="hover:scale-110 transition">
-            <i data-feather="user" class="w-6 h-6 text-[#748DAE]"> </i>
-          </button>
+          <a
+            href="profile.html"
+            class="hover:scale-110 transition"
+          >
+            <i
+              data-feather="user"
+              class="w-6 h-6 text-[#748DAE]"
+            ></i>
+          </a>
         </div>
       </div>
     </nav>
@@ -104,20 +120,26 @@
       </div>
     </section>
 
-    
+    <!-- CART -->
     <section class="pt-15 pb-20 px-5">
       <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-10">
+
         <!-- CART ITEM -->
-        <div id="cartContainer" class="lg:col-span-2 space-y-5"></div>
+        <div
+          id="cartContainer"
+          class="lg:col-span-2 space-y-5"
+        ></div>
 
         <!-- SUMMARY -->
         <div class="bg-white rounded-2xl shadow p-6 h-fit">
-          <h2 class="text-2xl font-bold text-heading mb-5">Shopping Summary</h2>
+          <h2 class="text-2xl font-bold text-heading mb-5">
+            Shopping Summary
+          </h2>
 
           <div class="flex justify-between text-lg">
-            <span> Subtotal </span>
+            <span>Subtotal</span>
 
-            <span id="subtotal"> Rp0 </span>
+            <span id="subtotal">Rp0</span>
           </div>
 
           <button
@@ -137,6 +159,7 @@
       </div>
     </section>
 
+    <!-- SCRIPT -->
     <script src="../script/cart.js"></script>
 
     <script>
