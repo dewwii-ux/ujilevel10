@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk</title>
+    <link href="../src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="bg-neutral-primary fixed top-0 w-full z-50 border-b border-neutral-primary shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- LOGO -->
+        <a href="#" class="flex items-center gap-3">
+          <img
+            src="../asset/luxea.jpg"
+            class="w-11 h-11 rounded-full object-cover"
+            alt=""
+          />
+
+          <h1 class="text-2xl font-bold text-heading">Luxea</h1>
+        </a>
+
+        <!-- MENU -->
+        <div class="hidden md:flex items-center gap-8 font-medium">
+          <a href="#home" class="hover:text-[#748DAE] transition"> Home </a>
+
+          <a href="#contact" class="hover:text-[#748DAE] transition">
+            Contact
+          </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-4">
+          <!-- SEARCH -->
+          <form class="hidden md:block">
+            <div class="relative">
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search..."
+                class="w-64 rounded-full border border-[#748DAE] bg-white px-4 py-2 pl-10 text-sm outline-none focus:border-[#748DAE]"
+              />
+
+              <svg
+                class="absolute left-3 top-2.5 w-4 h-4 text-[ #748DAE]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-4.35-4.35m1.85-5.65a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
+                />
+              </svg>
+            </div>
+          </form>
+
+          <!--cart-->
+         <a href="cart.html" class="relative">
+  <i data-feather="shopping-cart" class="w-7 h-7 text-[#748DAE]"></i>
+
+  <span
+    id="cartCount"
+    class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
+  >
+    0
+  </span>
+</a>
+          <!-- PROFILE -->
+          <a href="profile.html" class="hover:scale-110 transition">
+            <i data-feather="user" class="w-6 h-6 text-[#748DAE]"> </i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Ini Hero -->
+    <section
+      id="home"
+      class="bg-center bg-no-repeatbg bg-cover blend-multiply w-screen"
+      style="background-image: url(&quot;/asset/banner.png&quot;)"
+    >
+      <div class="px-4 mx-auto max-w-screen text-center py-24 lg:py-56">
+        <h1
+          class="mb-6 text-4xl font-bold tracking-tighter text-white md:text-5xl lg:text-6xl"
+        >
+          Discover Your Perfect Style
+        </h1>
+        <p
+          class="mb-8 text-base font-normal text-white md:text-xl sm:px-16 lg:px-48"
+        >
+          Explore premium fashion, electronics, jewelry, and lifestyle products
+          designed to elevate your everyday shopping experience.
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="shop"
+      class="bg-center bg-no-repeat bg-cover blend-multiply-screen"
+    >
+      <div id="produk"></div>
+    </section>
+
+    <script src="../script/home.js"></script>
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+    <footer class="bg-gray-100 border-t border-gray-200 mt-20">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+        <!-- TOP -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <!-- LOGO -->
+          <div>
+            <a href="#" class="flex items-center gap-3">
+              <img
+                src="/asset/luxea.jpg"
+                class="w-10 h-10 rounded-full object-cover"
+              />
+
+              <h1 class="text-3xl font-bold text-gray-900">Luxea</h1>
+            </a>
+
+            <p class="text-gray-500 mt-5 leading-relaxed">
+              Modern e-commerce platform providing fashion, electronics,
+              jewelry, and lifestyle products with a premium shopping
+              experience.
+            </p>
+          </div>
+
+          <!-- SHOP -->
+          <div>
+            <h2 class="text-lg font-bold text-gray-900 mb-5">Shop</h2>
+
+            <ul class="space-y-4 text-gray-500">
+              <li>
+                <a href="#" class="hover:text-black transition">
+                  Men's Fashion
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-black transition">
+                  Women's Fashion
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-black transition">
+                  Electronics
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-black transition"> Jewelry </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- COMPANY -->
+          <div>
+            <h2 class="text-lg font-bold text-gray-900 mb-5">Company</h2>
+
+            <ul class="space-y-4 text-gray-500">
+              <li>
+                <a href="#shop" class="hover:text-black transition"> Shop </a>
+              </li>
+
+              <li>
+                <a href="#about" class="hover:text-black transition">
+                  About Us
+                </a>
+              </li>
+
+              <li>
+                <a href="#contact" class="hover:text-black transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SUPPORT -->
+          <div>
+            <h2 class="text-lg font-bold text-gray-900 mb-5">Support</h2>
+
+            <ul class="space-y-4 text-gray-500">
+              <li>
+                <a href="#" class="hover:text-black transition">
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-black transition">
+                  Terms & Conditions
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-black transition">
+                  Help Center
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- LINE -->
+        <div id="contact" class="border-t border-gray-300 mt-14 pt-8">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-5"
+          >
+            <!-- COPYRIGHT -->
+            <p class="text-gray-500 text-sm">
+              © 2025 Luxea. All Rights Reserved.
+            </p>
+
+            <!-- SOCIAL MEDIA -->
+            <div class="flex items-center gap-6">
+              <a
+                href="https://github.com/dewwii-ux"
+                class="text-gray-500 hover:text-gray-900 transition"
+              >
+                <i data-feather="github"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/dewicreates_/"
+                class="text-gray-500 hover:text-gray-900 transition"
+              >
+                <i data-feather="instagram"></i>
+              </a>
+
+              <a href="#" class="text-gray-500 hover:text-gray-900 transition">
+                <i data-feather="linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Product</title>
+    <link href="../src/output.css" rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <nav
+      class="bg-neutral-primary fixed top-0 w-full z-50 border-b border-neutral-primary shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- LOGO -->
+        <a href="#" class="flex items-center gap-3">
+          <img
+            src="../asset/luxea.jpg"
+            class="w-11 h-11 rounded-full object-cover"
+            alt=""
+          />
+
+          <h1 class="text-2xl font-bold text-heading">Luxea</h1>
+        </a>
+
+        <!-- MENU -->
+        <div class="center hidden md:flex items-center gap-8 font-medium text-heading">
+          <a href="/view/home.html" class="hover:text-[#748DAE] transition">
+            Home
+          </a>
+        <div class="center hidden md:flex items-center gap-8 font-medium text-heading">
+          <a href="/view/home.html" class="hover:text-[#748DAE] transition">
+            Contact
+          </a>
+        </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-4">
+          <!-- SEARCH -->
+          <form class="hidden md:block">
+            <div class="relative">
+              <input
+                type="search"
+                placeholder="Search..."
+                class="w-64 rounded-full border border-[#748DAE] bg-white px-4 py-2 pl-10 text-sm outline-none focus:border-[#748DAE]"
+              />
+
+              <svg
+                class="absolute left-3 top-2.5 w-4 h-4 text-[ #748DAE]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-4.35-4.35m1.85-5.65a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
+                />
+              </svg>
+            </div>
+          </form>
+
+          <!--cart-->
+          <a href="cart.html" class="hover:scale-110 transition">
+            <i data-feather="shopping-cart" class="w-6 h-6 text-[#748DAE]"></i>
+          </a>
+
+          <!-- PROFILE -->
+          <button class="hover:scale-110 transition">
+            <i data-feather="user" class="w-6 h-6 text-[#748DAE]"> </i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTAINER -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <!-- DETAIL -->
+      <div id="detail" class="bg-white rounded-3xl p-10 shadow-md"></div>
+
+      <!-- POPULAR PRODUCT -->
+      <div class="mt-20">
+        <h2 class="text-4xl font-bold mb-10">Popular Products</h2>
+
+        <div
+          id="popular"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        ></div>
+      </div>
+    </section>
+
+    <div id="detail"></div>
+    <div id="popular"></div>
+    <script src="../script/produkDetail.js"></script>
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

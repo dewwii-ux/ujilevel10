@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Payment</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-primary">
+
+  <section class="py-16 px-5">
+
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-3 gap-10">
+
+      <!-- PRODUCT -->
+      <div class="lg:col-span-2">
+
+        <h2 class="text-3xl font-bold text-heading mb-8">
+          Payment
+        </h2>
+
+        <div
+          id="paymentItems"
+          class="space-y-5"
+        >
+        </div>
+
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="bg-white p-6 rounded-2xl shadow h-fit">
+
+        <h2 class="text-2xl font-bold text-heading mb-6">
+          Payment Detail
+        </h2>
+
+        <!-- SUBTOTAL -->
+        <div class="flex justify-between mb-4">
+
+          <span>
+            Subtotal
+          </span>
+
+          <span id="subtotal">
+            Rp 0
+          </span>
+
+        </div>
+
+        <!-- ONGKIR -->
+        <div class="flex justify-between mb-4">
+
+          <span>
+            Shipping
+          </span>
+
+          <span>
+            Rp 20.000
+          </span>
+
+        </div>
+
+        <!-- TOTAL -->
+        <div class="flex justify-between text-xl font-bold border-t pt-4">
+
+          <span>
+            Total
+          </span>
+
+          <span id="total">
+            Rp 0
+          </span>
+
+        </div>
+
+        <!-- PAYMENT -->
+        <div class="mt-8">
+
+          <label class="font-semibold text-gray-700">
+            Payment Method
+          </label>
+
+          <select
+            id="paymentMethod"
+            class="w-full mt-3 border rounded-xl px-4 py-3 outline-none focus:border-neutral-primary"
+          >
+
+            <option>
+              Bank BCA
+            </option>
+
+            <option>
+              Bank Mandiri
+            </option>
+
+            <option>
+              DANA
+            </option>
+
+            <option>
+              GoPay
+            </option>
+
+          </select>
+
+        </div>
+
+        <!-- BUTTON -->
+        <button
+          onclick="payNow()"
+          class="bg-[#213C51] hover:bg-[#748DAE] transition text-white w-full py-3 rounded-xl mt-8"
+        >
+          Pay Now
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="../script/payment.js"></script>
+
+</body>
+</html>
